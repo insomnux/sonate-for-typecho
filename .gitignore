@@ -1,0 +1,8 @@
+# Bkup files
+*.sw[po]
+*.un~
+*.bk
+*.orig
+
+# Shell scripts
+*.sh
