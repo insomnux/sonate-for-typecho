@@ -89,7 +89,7 @@ if (!empty($this->options->sidebarBlock)):
       if ($i >= count($title_style)) $i = 0;
 ?>
         <li class="<?php echo $this_style; ?>">
-          <a href="<?php $months->permalink(); ?>"><?php $months->date(); ?></a> (<?php $cats->count(); ?>)
+          <a href="<?php $months->permalink(); ?>"><?php $months->date(); ?></a>
         </li>
 <?php } //endwhile ?>
       </ul>
