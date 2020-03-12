@@ -17,3 +17,7 @@ git clone https://github.com/insomnux/typecho-sonate.git
 ## Screenshot
 
 ![Screenshot of "sonate" theme for Typecho](./screenshot.png)
+
++ Demo:
+
+[http://sonate.forloops.xyz/](http://sonate.forloops.xyz/)
