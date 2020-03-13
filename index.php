@@ -5,7 +5,7 @@
  * @package Sonate - a theme for Typecho
  * @author insomnux
  * @version 1.0
- * @link https://github.com/insomnux/typecho-sonate
+ * @link https://github.com/insomnux/sonate-for-typecho
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
@@ -27,12 +27,12 @@ while($this->next()):
 ?>
     <article class="posts post-list <?php echo $this_style; ?>" itemscope itemtype="http://schema.org/BlogPosting">
       <div class="title-box">
-        <h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+        <h2 class="post-title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title(25,'...') ?></a></h2>
         <div class="post-meta"><span><?php _e('Posted by'); ?></span> <a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>, <span><?php _e('on'); ?></span> <time itemprop="datePublished" datetime="<?php $this->date('c'); ?>"><?php $this->date(); ?></time></div>
       <div class="post-cat"><span><?php _e('Category'); ?>:</span> <?php $this->category(',');?></div>
       </div><!-- ./.title-box -->
         
-      <div class="post-content" itemprop="articleBody"><?php $this->excerpt(350,''); ?><p class="more"><a href="<?php $this->permalink(); ?>"><?php _e('Read more &rarr;'); ?></a></p></div>
+      <div class="post-content" itemprop="articleBody"><?php $this->excerpt(350,' ...'); ?><p class="more"><a href="<?php $this->permalink(); ?>"><?php _e('Read more &rarr;'); ?></a></p></div>
     </article>
 <?php
 endwhile;

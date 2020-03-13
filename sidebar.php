@@ -21,11 +21,13 @@ if (!empty($this->options->sidebarBlock)):
     while($post->next()) {
       $this_style = $title_style[$i];
       $i++;
-      if ($i >= count($title_style)) $i = 0;
+      if ($i >= count($title_style)) {
+		$i = 0;
+	  }
 ?>
       <article class="sidebar-items <?php echo $this_style; ?>">
         <div class="sidebar-cat"><?php $post->category(','); ?></div>
-        <h4><a href="<?php $post->permalink() ?>"><?php $post->title() ?></a></h3>
+        <h4><a href="<?php $post->permalink() ?>"><?php $post->title(25,'...') ?></a></h3>
       </article>
 <?php } // endwhile ?>
     </section>
@@ -43,9 +45,11 @@ if (!empty($this->options->sidebarBlock)):
     while($comments->next()) {
       $this_style = $title_style[$i];
       $i++;
-      if ($i >= count($title_style)) $i = 0;
+      if ($i >= count($title_style)) {
+		$i = 0;
+	  }
 ?>
-      <article class="sidebar-items <?php echo array_shift( $title_style ); ?>">
+      <article class="sidebar-items <?php echo $this_style; ?>">
         <a href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a>: <?php $comments->excerpt(35, '...'); ?>
       </article>
 <?php } //endwhile ?>
@@ -64,7 +68,9 @@ if (!empty($this->options->sidebarBlock)):
     while($cats->next()) {
       $this_style = $title_style[$i];
       $i++;
-      if ($i >= count($title_style)) $i = 0;
+      if ($i >= count($title_style)) {
+		$i = 0;
+	  }
 ?>
         <li class="<?php echo $this_style; ?>">
           <a href="<?php $cats->permalink(); ?>"><?php $cats->name(); ?></a> (<?php $cats->count(); ?>)
