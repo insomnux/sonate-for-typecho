@@ -27,7 +27,7 @@ if (!empty($this->options->sidebarBlock)):
 ?>
       <article class="sidebar-items <?php echo $this_style; ?>">
         <div class="sidebar-cat"><?php $post->category(','); ?></div>
-        <h4><a href="<?php $post->permalink() ?>"><?php $post->title(25,'...') ?></a></h3>
+        <h4><a href="<?php $post->permalink() ?>"><?php $post->title(25,'...') ?></a></h4>
       </article>
 <?php } // endwhile ?>
     </section>
