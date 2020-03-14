@@ -13,7 +13,7 @@ $i = 0;
 if (!empty($this->options->sidebarBlock)):
   /* Latest posts widget */
   if (in_array('ShowRecentPosts', $this->options->sidebarBlock)) {
-    $this->widget('Widget_Contents_Post_Recent','pageSize=6')->to($post);
+    $this->widget('Widget_Contents_Post_Recent')->to($post);
 ?>
     <section class="sidebar-widgets">
       <h3><?php _e('Latest posts'); ?></h3>

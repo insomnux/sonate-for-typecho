@@ -2,7 +2,7 @@
 /**
  * Theme for typecho - http://typecho.org
  *
- * @package Sonate - a theme for Typecho
+ * @package Sonate for Typecho
  * @author insomnux
  * @version 1.0
  * @link https://github.com/insomnux/sonate-for-typecho

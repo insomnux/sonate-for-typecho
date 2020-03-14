@@ -22,7 +22,17 @@ $i = 0;
   'author'=>  _t('By: %s')
 ), '', ' - '); ?><?php $this->options->title(); ?></title>
   <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/style.css'); ?>">
-  <?php $this->header(); ?>
+  <style>
+    main {
+      background-color:  #f6f6f3;
+      background-position: top;
+      background-size: contain;
+      background-image: url("<?php $this->options->background_url(); ?>");
+    }
+  </style>
+<?php
+$this->header();
+?>
 </head>
 
 <body>
