@@ -19,7 +19,8 @@ git clone https://github.com/insomnux/typecho-sonate.git
 
 ## Screenshot
 
-![Screenshot of "sonate" theme for Typecho](./screenshot.png)
+![Screenshot of "Sonate" theme for Typecho](./screenshot.png)
+![Screenshot of "Sonate" theme for Typecho in various screen sizes](./img/screen.png)
 
 + Demo:
 

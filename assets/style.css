@@ -328,7 +328,7 @@ main {
 }
 /* Toggle button */
 .toggle {
-  background-color: transparent;
+  background-color: rgba(234, 234, 234, 0.2);
   border: 0;
   cursor: pointer;
   display: inline-block;
