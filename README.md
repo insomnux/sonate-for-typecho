@@ -24,9 +24,12 @@ git clone https://github.com/insomnux/typecho-sonate.git
 
 + Demo:
 
-[http://sonate.forloops.xyz/](http://sonate.forloops.xyz/)
+[sonate.4526007.xyz/](https://sonate.4526007.xyz/)
 
 ## Changelog
+
+20240215
+Demo url
 
 20200314
 Changed comment form styling
